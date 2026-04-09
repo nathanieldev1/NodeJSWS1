@@ -31,9 +31,7 @@ jobs:
           fetch-depth: 1
       - name: Project Setup 
         run: 
-          cd uigen
-          npm run setup
-          npm run dev
+          cd uigen && npm run setup && npm run dev
 
       - name: Run Claude Code
         id: claude
